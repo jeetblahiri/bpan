@@ -1,6 +1,6 @@
 # Balanced Predictive Attractor Networks (BPAN)
 
-Official PyTorch implementation of **"Balanced Predictive Attractor Networks for Anytime and Sequential Inference"** submitted to *Neurocomputing*.
+Official PyTorch implementation of **"Balanced Predictive Attractor Networks for Anytime and Sequential Inference"**
 
 **Jeet Bandhu Lahiri, Siddharth Panwar**  
 *Indian Institute of Technology Mandi*
