@@ -11,10 +11,10 @@ Official PyTorch implementation of **"Balanced Predictive Attractor Networks for
 
 BPAN introduces **excitatory-inhibitory (E/I) recurrent classifier heads** that achieve parameter-efficient anytime inference without learned halting policies. By incorporating Dale's law constraints and explicit E/I balance regularization, BPAN enables:
 
-- ✅ **5.3× fewer parameters** than ACT/PonderNet baselines
-- ✅ **4× speedup** through intrinsic confidence-based early stopping
-- ✅ **Biologically-grounded dynamics** with interpretable E/I balance
-- ✅ **Zero training modifications** for anytime inference (no ponder costs or KL regularization)
+-  **5.3× fewer parameters** than ACT/PonderNet baselines
+-  **4× speedup** through intrinsic confidence-based early stopping
+-  **Biologically-grounded dynamics** with interpretable E/I balance
+-  **Zero training modifications** for anytime inference (no ponder costs or KL regularization)
 
 ### Key Results
 
