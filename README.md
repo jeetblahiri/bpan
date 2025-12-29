@@ -211,9 +211,5 @@ Supported corruptions: `gaussian`, `salt_pepper`, `occlusion`
 
 ## Citation
 
-TO be updated
+To be updated..
 
-
- Panwar**: [siddharth@example.com]
-
-**Issues**: Please use the [GitHub Issues](https://github.com/jeetblahiri/bpan/issues) tracker for bug reports and feature requests.
