@@ -123,7 +123,7 @@ python aggregate_paper_figures.py
   seeds 1, 2, 3.
 - `run_all_experiments.sh` activates a virtualenv at `~/venvs/venv`; edit
   the `source` line at the top of the script to point at your environment.
-- Results in the paper were obtained on a single NVIDIA A5000 (24 GB);
+- Results in the paper were obtained on Apple M5 Silicon (32 GB VRAM);
   MNIST and Fashion-MNIST runs also complete comfortably on CPU.
 
 ---
