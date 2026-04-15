@@ -121,7 +121,7 @@ python aggregate_paper_figures.py
 
 - All training drivers accept `--seed`; the paper reports means ± std over
   seeds 1, 2, 3.
-- `run_all_experiments.sh` activates a virtualenv at `~/venvs/jeet`; edit
+- `run_all_experiments.sh` activates a virtualenv at `~/venvs/venv`; edit
   the `source` line at the top of the script to point at your environment.
 - Results in the paper were obtained on a single NVIDIA A5000 (24 GB);
   MNIST and Fashion-MNIST runs also complete comfortably on CPU.
