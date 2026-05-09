@@ -252,7 +252,8 @@ def main():
     # On CIFAR/SVHN, ACT + PonderNet are wrapped with a ConvBackboneCIFAR so
     # they see learned conv features instead of raw flattened pixels — that
     # makes the anytime comparison against (conv-backboned) BPAN apples-to-apples.
-    # Multi-Exit already has its own conv variant (MultiExitCNN).
+    # SVHN Multi-Exit uses the same backbone plus an MLP exit head to keep the
+    # revised table comparison backbone-matched. CIFAR-10 keeps MultiExitCNN.
     # In all CIFAR/SVHN cases, the wrapped model consumes 4D input.
     use_conv_input = is_cifar
     input_dim = in_shape[0] * in_shape[1] * in_shape[2]
@@ -301,7 +302,16 @@ def main():
                 beta=args.ponder_beta,
             )
     elif args.model == "multi_exit":
-        if is_cifar:
+        if args.dataset == "svhn":
+            backbone = ConvBackboneCIFAR()
+            head = MultiExitMLP(
+                input_dim=backbone.out_dim,
+                n_classes=n_classes,
+                hidden_dim=args.hidden,
+                n_exits=args.max_steps,
+            )
+            model = ConvWrapper(backbone, head)
+        elif is_cifar:
             model = MultiExitCNN(n_classes=n_classes, n_exits=args.max_steps)
         else:
             model = MultiExitMLP(
