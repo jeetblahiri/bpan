@@ -130,5 +130,20 @@ python aggregate_paper_figures.py
 
 ## Citation
 
-If you use this code, please cite the TCDS paper (BibTeX will be added once
-the camera-ready DOI is assigned).
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@article{lahiri2026balanced,
+  author  = {Lahiri, Jeet Bikram and Panwar, S.},
+  title   = {Balanced Predictive Attractor Networks: A Compact Excitatory--Inhibitory Testbed for Anytime and Sequential Inference},
+  journal = {IEEE Transactions on Cognitive and Developmental Systems},
+  year    = {2026},
+  pages   = {1--12},
+  doi     = {10.1109/TCDS.2026.3702132}
+}
+```
+
+### Reference
+
+> Lahiri, J. B., & Panwar, S. (2026). *Balanced Predictive Attractor Networks: A Compact Excitatory–Inhibitory Testbed for Anytime and Sequential Inference*. IEEE Transactions on Cognitive and Developmental Systems, 1–12. https://doi.org/10.1109/TCDS.2026.3702132
+
